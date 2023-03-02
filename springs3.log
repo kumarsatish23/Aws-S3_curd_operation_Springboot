@@ -1,0 +1,107 @@
+2023-03-02 11:21:56.983  INFO 19012 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Starting SpringS3Application using Java 17.0.5 on DESKTOP-RKFJCIP with PID 19012 (C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3\target\classes started by Satish Rai in C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3)
+2023-03-02 11:21:56.985  INFO 19012 --- [restartedMain] in.vanna.springs3.SpringS3Application    : No active profile set, falling back to 1 default profile: "default"
+2023-03-02 11:21:57.111  INFO 19012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 11:21:57.112  INFO 19012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 11:21:58.437  INFO 19012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02 11:21:58.451  INFO 19012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 11:21:58.452  INFO 19012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 11:21:58.630  INFO 19012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 11:21:58.631  INFO 19012 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1517 ms
+2023-03-02 11:21:58.718  WARN 19012 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configuration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aaws.credentials.secret-key' in value "${cloud.aaws.credentials.secret-key}"
+2023-03-02 11:21:58.722  INFO 19012 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02 11:21:58.745  INFO 19012 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-02 11:21:58.793 ERROR 19012 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configuration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aaws.credentials.secret-key' in value "${cloud.aaws.credentials.secret-key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at in.vanna.springs3.SpringS3Application.main(SpringS3Application.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.9.jar:2.7.9]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'cloud.aaws.credentials.secret-key' in value "${cloud.aaws.credentials.secret-key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 22 common frames omitted
+
+2023-03-02 11:22:43.193  INFO 12184 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Starting SpringS3Application using Java 17.0.5 on DESKTOP-RKFJCIP with PID 12184 (C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3\target\classes started by Satish Rai in C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3)
+2023-03-02 11:22:43.195  INFO 12184 --- [restartedMain] in.vanna.springs3.SpringS3Application    : No active profile set, falling back to 1 default profile: "default"
+2023-03-02 11:22:43.302  INFO 12184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 11:22:43.302  INFO 12184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 11:22:44.740  INFO 12184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02 11:22:44.754  INFO 12184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 11:22:44.755  INFO 12184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 11:22:44.958  INFO 12184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 11:22:44.959  INFO 12184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1656 ms
+2023-03-02 11:22:46.966  INFO 12184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 11:22:47.051  INFO 12184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 11:22:47.065  INFO 12184 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Started SpringS3Application in 4.499 seconds (JVM running for 5.691)
+2023-03-02 11:22:56.494  INFO 12184 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 11:22:56.496  INFO 12184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 11:22:56.499  INFO 12184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-02 11:22:57.640  INFO 12184 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 152 ms
+2023-03-02 11:24:56.328  INFO 12184 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-02 11:24:56.352  INFO 12184 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02 11:24:56.355  INFO 12184 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 11:24:59.614  INFO 15488 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Starting SpringS3Application using Java 17.0.5 on DESKTOP-RKFJCIP with PID 15488 (C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3\target\classes started by Satish Rai in C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3)
+2023-03-02 11:24:59.616  INFO 15488 --- [restartedMain] in.vanna.springs3.SpringS3Application    : No active profile set, falling back to 1 default profile: "default"
+2023-03-02 11:24:59.752  INFO 15488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 11:24:59.753  INFO 15488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 11:25:01.290  INFO 15488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02 11:25:01.320  INFO 15488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 11:25:01.321  INFO 15488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 11:25:01.496  INFO 15488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 11:25:01.497  INFO 15488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1743 ms
+2023-03-02 11:25:03.654  INFO 15488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 11:25:03.746  INFO 15488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 11:25:03.766  INFO 15488 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Started SpringS3Application in 4.732 seconds (JVM running for 5.999)
+2023-03-02 11:25:08.887  INFO 15488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 11:25:08.888  INFO 15488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 11:25:08.893  INFO 15488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-03-02 11:25:09.884  INFO 15488 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 157 ms
+2023-03-02 11:31:01.701  INFO 15488 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-02 11:31:01.722  INFO 15488 --- [RMI TCP Connection(13)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02 11:31:01.724  INFO 15488 --- [RMI TCP Connection(13)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 11:31:04.919  INFO 10688 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Starting SpringS3Application using Java 17.0.5 on DESKTOP-RKFJCIP with PID 10688 (C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3\target\classes started by Satish Rai in C:\Users\Satish Rai\Documents\workspace-spring-tool-suite-4-4.17.1.RELEASE\SpringS3)
+2023-03-02 11:31:04.920  INFO 10688 --- [restartedMain] in.vanna.springs3.SpringS3Application    : No active profile set, falling back to 1 default profile: "default"
+2023-03-02 11:31:05.034  INFO 10688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 11:31:05.035  INFO 10688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 11:31:06.479  INFO 10688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-02 11:31:06.496  INFO 10688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 11:31:06.497  INFO 10688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 11:31:06.694  INFO 10688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 11:31:06.695  INFO 10688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1659 ms
+2023-03-02 11:31:08.741  INFO 10688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 11:31:08.827  INFO 10688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 11:31:08.847  INFO 10688 --- [restartedMain] in.vanna.springs3.SpringS3Application    : Started SpringS3Application in 4.489 seconds (JVM running for 5.752)
+2023-03-02 11:31:09.474  INFO 10688 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-03-02 11:31:09.500  INFO 10688 --- [RMI TCP Connection(6)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
