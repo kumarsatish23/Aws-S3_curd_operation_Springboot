@@ -1,10 +1,10 @@
-package in.vanna.springs3;
+package in.vanna;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringS3ApplicationTests {
+class S3MicroservicesApiApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,12 +1,82 @@
 {"properties": [
   {
-    "name": "document.bucket-name",
+    "name": "bucket-name",
     "type": "java.lang.String",
-    "description": "A description for 'document.bucket-name'"
+    "description": "A description for 'bucket-name'"
   },
   {
-    "name": "document.bucket-name",
+    "name": "region",
     "type": "java.lang.String",
-    "description": "A description for 'document.bucket-name'"
+    "description": "A description for 'region'"
+  },
+  {
+    "name": "access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'access-key'"
+  },
+  {
+    "name": "secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'secret-key'"
+  },
+  {
+    "name": "bucketname",
+    "type": "java.lang.String",
+    "description": "A description for 'bucketname'"
+  },
+  {
+    "name": "bucketname",
+    "type": "java.lang.String",
+    "description": "A description for 'bucketname'"
+  },
+  {
+    "name": "bucketname",
+    "type": "java.lang.String",
+    "description": "A description for 'bucketname'"
+  },
+  {
+    "name": "region",
+    "type": "java.lang.String",
+    "description": "A description for 'region'"
+  },
+  {
+    "name": "accessKey",
+    "type": "java.lang.String",
+    "description": "A description for 'accessKey'"
+  },
+  {
+    "name": "secretKey",
+    "type": "java.lang.String",
+    "description": "A description for 'secretKey'"
+  },
+  {
+    "name": "server.http.port",
+    "type": "java.lang.String",
+    "description": "A description for 'server.http.port'"
+  },
+  {
+    "name": "bucketname",
+    "type": "java.lang.String",
+    "description": "A description for 'bucketname'"
+  },
+  {
+    "name": "region",
+    "type": "java.lang.String",
+    "description": "A description for 'region'"
+  },
+  {
+    "name": "accessKey",
+    "type": "java.lang.String",
+    "description": "A description for 'accessKey'"
+  },
+  {
+    "name": "secretKey",
+    "type": "java.lang.String",
+    "description": "A description for 'secretKey'"
+  },
+  {
+    "name": "server.http.port",
+    "type": "java.lang.String",
+    "description": "A description for 'server.http.port'"
   }
 ]}
